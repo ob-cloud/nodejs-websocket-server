@@ -10,7 +10,9 @@ new WebSocket('wss://127.0.0.1:8001')
 
 ## start
 
-`npm run start`
+1. `npm install`
+
+2. `npm run start`
 
 or
 
