@@ -1,0 +1,12 @@
+{
+  "name": "nodejs-websocket-server",
+  "version": "0.1.0",
+  "description": "Nodejs Websocket Server for Scratch 3.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "nodejs-websocket": "^1.7.2",
+    "serialport": "^8.0.7"
+  }
+}
