@@ -5,18 +5,19 @@ const JsonResult = require('./jsonResult')
 const ScratchSerialPort = require('./scratchSerialPort')
 
 // wss://127.0.0.1:8001/
-const options = {
-  secure: true,
-  key: fs.readFileSync("ssl-key.pem"),
-  cert: fs.readFileSync("ssl-cert.pem")
-}
+// const options = {
+//   secure: true,
+//   key: fs.readFileSync("ssl-key.pem"),
+//   cert: fs.readFileSync("ssl-cert.pem")
+// }
+const options = {}
 
 console.log('server creating')
 ws.createServer(options, function (conn) {
 
   function response(data = {}) {
-    const scratchSerialPort = new ScratchSerialPort()
-    scratchSerialPort.write(scratchSerialPort.getBuf(data))
+    // const scratchSerialPort = new ScratchSerialPort()
+    // scratchSerialPort.write(scratchSerialPort.getBuf(data))
     conn.sendText(JSON.stringify(data))
   }
 
@@ -26,10 +27,10 @@ ws.createServer(options, function (conn) {
     if (!command) {
       conn.sendText(JsonResult.error())
     }
-    const cmd = command.action
+    const cmd = command.cmd
     const fn = uavActions[cmd]
     if (typeof fn === 'function') {
-      fn(command.data, response)
+      fn(command.data, response, cmd)
     } else {
       conn.sendText(JsonResult.error('无实现方法'))
     }

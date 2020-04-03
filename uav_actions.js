@@ -54,6 +54,34 @@ module.exports = {
     // handle data
     callback(data)
   },
+  face_unlock(data, callback, cmd) {
+    // handle data
+    callback({cmd, data: true})
+  },
+  visual_track(data, callback, cmd) {
+    callback({cmd, data: parseInt(Math.random(1,4)*10)})
+  },
+  attitude_detect(data, callback, cmd) {
+    callback({cmd, data: parseInt(Math.random(1,4)*10)})
+  },
+  face_reg(data, callback, cmd) {
+    callback({cmd, data: true})
+  },
+  open_camera(data, callback, cmd) {
+    callback({cmd, data: true})
+  },
+  close_camera(data, callback, cmd) {
+    callback({cmd, data: true})
+  },
+  visual_track_close (data, callback, cmd) {
+    callback({cmd, data: true})
+  },
+  face_unlock_close (data, callback, cmd) {
+    callback({cmd, data: true})
+  },
+  attitude_detect_close (data, callback, cmd) {
+    callback({cmd, data: true})
+  },
   send_msg(data, callback) {
     // handle data
     callback(data)

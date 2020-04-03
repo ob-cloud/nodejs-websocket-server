@@ -148,3 +148,67 @@
   data: 0
 }
 ```
+
+# 识别模块
+
+## 人脸解锁
+
+// 发送
+
+```js
+{
+  cmd: "face_unlock",
+  data: ''
+}
+```
+
+// 接收
+
+```js
+{
+  cmd: "face_unlock",
+  data: true
+}
+```
+
+## 视觉跟踪
+
+// 发送
+
+```js
+{
+  cmd: "visual_track",
+  data: ''
+}
+```
+
+// 接收
+
+```js
+{
+  cmd: "visual_track",
+  data: true
+}
+```
+
+## 姿态识别
+
+// 发送
+
+```js
+{
+  cmd: "attitude_detect",
+  data: ''
+}
+```
+
+// 接收
+
+```js
+{
+  cmd: "attitude_detect",
+  data: true
+}
+```
+
+##
