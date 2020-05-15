@@ -82,8 +82,42 @@ module.exports = {
   attitude_detect_close (data, callback, cmd) {
     callback({cmd, data: true})
   },
+  'e-stop': function (data, callback, cmd) {
+    // handle data
+    callback({cmd, data: true})
+  },
   send_msg(data, callback) {
     // handle data
     callback(data)
+  },
+  car_move_left(data, callback, cmd) {
+    callback({cmd, data: true})
+  },
+  car_move_right(data, callback, cmd) {
+    callback({cmd, data: true})
+  },
+  car_move_forward(data, callback, cmd) {
+    callback({cmd, data: true})
+  },
+  car_move_back(data, callback, cmd) {
+    callback({cmd, data: true})
+  },
+  car_turn_left(data, callback, cmd) {
+    callback({cmd, data: true})
+  },
+  car_turn_right(data, callback, cmd) {
+    callback({cmd, data: true})
+  },
+  car_stop(data, callback, cmd) {
+    callback({cmd, data: true})
+  },
+  car_reset_action(data, callback, cmd) {
+    callback({cmd, data: true})
+  },
+  car_exec_action(data, callback, cmd) {
+    callback({cmd, data: true})
+  },
+  car_collect_env(data, callback, cmd) {
+    callback({cmd, data: true})
   }
 }

@@ -211,4 +211,98 @@
 }
 ```
 
-##
+# OB Car
+
+## 行走
+
+### 向左走
+
+```js
+{
+  cmd: "car_move_left",
+  data: 30
+}
+```
+
+### 向右
+
+```js
+{
+  cmd: "car_move_right",
+  data: 30
+}
+```
+
+### 向前
+
+```js
+{
+  cmd: "car_move_forward",
+  data: 30
+}
+```
+
+### 向后
+
+```js
+{
+  cmd: "car_move_back",
+  data: 30
+}
+```
+
+## 转弯
+
+### 向左转
+
+```js
+{
+  cmd: "car_turn_left",
+  data: 30
+}
+```
+
+### 向右转
+
+```js
+{
+  cmd: "car_turn_right",
+  data: 30
+}
+```
+
+## 停止
+
+```js
+{
+  cmd: "car_stop",
+  data: ''
+}
+```
+
+## 清除动作
+
+```js
+{
+  cmd: "car_reset_action",
+  data: ''
+}
+```
+
+## 执行动作
+
+```js
+{
+  cmd: "car_exec_action",
+  data: ''
+}
+```
+
+## 采集环境
+
+```js
+{
+  cmd: "car_collect_env",
+  data: ''
+}
+```
