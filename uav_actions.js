@@ -170,5 +170,8 @@ module.exports = {
   },
   ms_req_data(data, callback, cmd) {
     callback({cmd, data})
+  },
+  ms_group(data, callback, cmd) {
+    callback({cmd, data})
   }
 }
