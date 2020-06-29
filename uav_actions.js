@@ -173,5 +173,11 @@ module.exports = {
   },
   ms_group(data, callback, cmd) {
     callback({cmd, data})
+  },
+  scene_control_light(data, callback, cmd) {
+    callback({cmd, data})
+  },
+  scene_control_volume(data, callback, cmd) {
+    callback({cmd, data})
   }
 }
