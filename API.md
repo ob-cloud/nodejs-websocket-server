@@ -1380,8 +1380,9 @@
 {
   cmd: "scene_control_light",
   data: {
-    action: 'red', // red,green,blue
-    value: 30
+    red: 0,
+    blue: 0,
+    green: 0
   }
 }
 ```
@@ -1392,7 +1393,8 @@
 {
   cmd: "scene_control_volume",
   data: {
-    value: 30
+    music: 0,
+    time: 0
   }
 }
 ```
