@@ -1366,7 +1366,7 @@
   data: {
     groupId: "3322",
     devType: "1",
-    deviceId: "dev122,dev1123",
+    deviceId: "deviceId1,deviceId2,deviceId3,...,deviceId6",
     value: 0
   }
 }
@@ -1382,7 +1382,9 @@
   data: {
     red: 0,
     blue: 0,
-    green: 0
+    green: 0,
+    inTime: 0, // 亮时间
+    offTime: 0 // 灭时间
   }
 }
 ```
