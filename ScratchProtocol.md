@@ -1272,7 +1272,7 @@
     red: 0,
     blue: 0,
     green: 0,
-    inTime: 0, // 亮时间
+    onTime: 0, // 亮时间
     offTime: 0 // 灭时间
   }
 }
